@@ -4,30 +4,34 @@ using UnityEngine;
 
 public class CubeController : MonoBehaviour
 {
-    private string message;
-    private Renderer ren;
     public GUIStyle labelStyle;
+    public Color defaultColor = Color.white;
+    public Color highlightColor = Color.red;
+
+    private string message;
+    private Renderer rend;
 
     void Start()
     {
-        this.ren = this.GetComponentInChildren<Renderer>();
+        this.rend = this.GetComponentInChildren<Renderer>();
+        this.rend.material.color = this.defaultColor;
     }
 
     void OnGUI()
     {
         var pos = Input.mousePosition;
-        GUI.Label(new Rect(pos.x, pos.y, 200, 30), this.message, this.labelStyle);
+        GUI.Label(new Rect(30, 30, 200, 30), this.message, this.labelStyle);
     }
 
     void OnMouseEnter()
     {
         this.message = this.transform.position.ToString();
-        this.ren.material.color = Color.red;
+        this.rend.material.color = this.highlightColor;
     }
 
     void OnMouseExit()
     {
         this.message = "";
-        this.ren.material.color = Color.white;
+        this.rend.material.color = this.defaultColor;
     }
 }
