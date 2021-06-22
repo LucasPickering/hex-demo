@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,7 +26,9 @@ public class CubeController : MonoBehaviour
 
     void OnMouseEnter()
     {
-        this.message = this.transform.position.ToString();
+        var pos = this.transform.position;
+        // Unity treats Y as vertical, but the hex system uses Z as vertical
+        this.message = String.Format("({0}, {1}, {2})", (int)pos.x, (int)pos.z, (int)pos.y);
         this.rend.material.color = this.highlightColor;
     }
 

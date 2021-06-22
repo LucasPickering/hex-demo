@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 87447363}
   - component: {fileID: 87447362}
   m_Layer: 0
-  m_Name: Y Axis
+  m_Name: Z Axis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -251,7 +251,7 @@ Transform:
   m_Children:
   - {fileID: 507430818}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &507430817
 GameObject:
@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 507430820}
   - component: {fileID: 507430819}
   m_Layer: 0
-  m_Name: Y Axis Label
+  m_Name: Z Axis Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -310,7 +310,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: +y
+  m_text: +z
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -800,7 +800,7 @@ GameObject:
   - component: {fileID: 1723611373}
   - component: {fileID: 1723611372}
   m_Layer: 0
-  m_Name: Z Axis Label
+  m_Name: Y Axis Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -845,7 +845,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: +z
+  m_text: +y
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -969,7 +969,7 @@ GameObject:
   - component: {fileID: 2019803873}
   - component: {fileID: 2019803872}
   m_Layer: 0
-  m_Name: Z Axis
+  m_Name: Y Axis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1086,7 +1086,7 @@ Transform:
   m_Children:
   - {fileID: 1723611371}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2029683991
 GameObject:
